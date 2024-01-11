@@ -12,7 +12,7 @@ class Shape
     }
 }
 
-class Triangle
+class Circle
 {
     public $radius;
 
@@ -29,7 +29,7 @@ class AreaCalculator
         foreach ($shapes as $shape) {
             if (is_a($shape, 'Square')) {
                 $area[] = $shape->width * $shape->height;
-            } elseif (is_a($shape, 'Triangle')) {
+            } elseif (is_a($shape, 'Circle')) {
                 $area[] = $shape->radius * $shape->radius * pi();
             }
         }
